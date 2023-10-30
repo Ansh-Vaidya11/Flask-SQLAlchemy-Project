@@ -167,7 +167,7 @@ def faculty_details():
             'FacultyName': faculty.FacultyName,
             'PersonID': person.PersonID,
             'PersonName': person.PersonName,
-            'PersonPhoneNumber': person.PersonPhoneNumber,
+            'PersonPhoneNumber': person.PersonPhoneNumber
         }
         faculty_list.append(faculty_dict)
 
