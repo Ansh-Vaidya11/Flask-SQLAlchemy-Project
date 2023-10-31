@@ -5,7 +5,6 @@ from flask import jsonify
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 class Todo(db.Model):
@@ -56,7 +55,7 @@ def update(id):
     else:
         return render_template('update.html', task=task)
     
-@app.route('/get-tasks', methods=['GET'])
+@app.route('/list-tasks', methods=['GET'])
 def list_tasks():
    tasks = Todo.query.all()
    tasks_list = []
