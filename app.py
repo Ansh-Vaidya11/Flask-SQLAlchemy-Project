@@ -55,7 +55,7 @@ def update(id):
     else:
         return render_template('update.html', task=task)
     
-@app.route('/list-tasks', methods=['GET'])
+@app.route('/get-tasks', methods=['GET'])
 def list_tasks():
    tasks = Todo.query.all()
    tasks_list = []
