@@ -1,1 +1,2 @@
 # Flask-SQLAlchemy-Project
+This Project establishes a Flask web server and connects to a MySQL database using SQLAlchemy ORM (Object - Relational Mapping). It defines multiple database tables representing a college schema, with relationships and joins among various entities. Several routes are defined to retrieve and return JSON data related to colleges, students, courses, and faculty. These routes query the database and format the retrieved data into JSON for client consumption via respective endpoints.
